@@ -66,7 +66,7 @@ Follow these steps to run the project locally. Any developer should be able to g
    ```
 
 4. **Open the App:**
-   Open [http://localhost:5173](http://localhost:5173) in **Chrome** or **Edge**. 
+   Open https://translation-mirror.netlify.app/ in **Chrome** or **Edge**. 
    *(Note: The Web Speech API is not fully supported in Firefox or Safari).*
 
 ### Build for Production
