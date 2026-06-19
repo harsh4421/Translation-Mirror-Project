@@ -12,12 +12,9 @@ No backend. No cloud API keys. Everything runs locally in the browser utilizing 
 
 ##  Screenshots
 
-*(Replace with actual screenshots of your app)*
-> **Tip:** You can upload screenshots to an issue or PR in this repo, copy the image link, and place it here!
-
-<!-- Example: -->
-<!-- ![Dashboard View](https://github.com/user/repo/assets/image-id.png) -->
-<!-- ![Translation Panel](https://github.com/user/repo/assets/image-id-2.png) -->
+![Live Session](./screenshots/live-session.png)
+![Transcripts](./screenshots/transcripts.png)
+![Dictionary](./screenshots/dictionary.png)
 
 ---
 
