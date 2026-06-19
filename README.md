@@ -1,6 +1,6 @@
 #  Translation Mirror Project
 
-![Live Demo](https://img.shields.io/badge/Live_Demo-Coming_Soon-blue?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Available-success?style=for-the-badge)](https://translation-mirror.netlify.app/)
 ![Tech Stack](https://img.shields.io/badge/Tech-React_|_Vite_|_TypeScript-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
