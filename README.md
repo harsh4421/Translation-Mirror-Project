@@ -1,8 +1,23 @@
-# 🎙 Web Speech API Intermittent Translation Mirror
+# 🎙️ Translation Mirror Project
 
-A production-ready, frontend-only speech recognition and real-time translation platform built with React + Vite + TypeScript.
+![Live Demo](https://img.shields.io/badge/Live_Demo-Coming_Soon-blue?style=for-the-badge)
+![Tech Stack](https://img.shields.io/badge/Tech-React_|_Vite_|_TypeScript-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-No backend. No cloud API keys. Everything runs in the browser.
+A production-ready, frontend-only speech recognition and real-time translation platform built with React, Vite, and TypeScript. 
+
+No backend. No cloud API keys. Everything runs locally in the browser utilizing the native Web Speech API.
+
+---
+
+## 📸 Screenshots
+
+*(Replace with actual screenshots of your app)*
+> **Tip:** You can upload screenshots to an issue or PR in this repo, copy the image link, and place it here!
+
+<!-- Example: -->
+<!-- ![Dashboard View](https://github.com/user/repo/assets/image-id.png) -->
+<!-- ![Translation Panel](https://github.com/user/repo/assets/image-id-2.png) -->
 
 ---
 
@@ -10,84 +25,70 @@ No backend. No cloud API keys. Everything runs in the browser.
 
 | Feature | Description |
 |---------|-------------|
-| 🎤 Web Speech API | Continuous/interim speech recognition |
-| 🌐 Client-side Translation | 200+ word dictionary (EN→HI/FR/ES/DE) |
-| 📊 Confidence Tracker | Green/Yellow/Red confidence bands with sparkline graph |
-| 📡 Telemetry HUD | 8 animated real-time metric cards |
-| 📜 Split-screen Mirror | Live transcription + translated mirror side-by-side |
-| 💾 LocalStorage Persistence | Auto-saves transcript, translations, preferences |
-| 📤 Export System | Download as `.md`, `.txt`, or `.json` |
-| 🎨 Dark/Light Mode | Glassmorphism SaaS design |
-| 📖 Custom Dictionary | Add your own word translations |
-| 🔍 History Search | Filter by date, word, or language |
-| 📈 Session Analytics | Word frequency, average confidence, session duration |
+| 🎤 **Web Speech API** | Continuous/interim speech recognition directly in-browser. |
+| 🌐 **Client-side Translation** | Built-in 200+ word dictionary (EN → HI/FR/ES/DE). |
+| 📊 **Confidence Tracker** | Green/Yellow/Red confidence bands with a live sparkline graph. |
+| 📡 **Telemetry HUD** | 8 animated real-time metric cards for speech statistics. |
+| 📜 **Split-screen Mirror** | Live transcription + translated mirror side-by-side. |
+| 💾 **LocalStorage Persistence** | Auto-saves transcripts, translations, and user preferences. |
+| 📤 **Export System** | Download transcripts as `.md`, `.txt`, or `.json`. |
+| 🎨 **Glassmorphism UI** | Premium Dark/Light mode SaaS-like design. |
+| 📖 **Custom Dictionary** | Add your own custom word translations on the fly. |
+| 🔍 **History Search** | Filter past sessions by date, word, or language. |
+| 📈 **Session Analytics** | Word frequency, average confidence, and session duration. |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Setup Instructions
 
+Follow these steps to run the project locally. Any developer should be able to get this running in minutes.
+
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/harsh4421/Translation-Mirror-Project.git
+   cd Translation-Mirror-Project
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the App:**
+   Open [http://localhost:5173](http://localhost:5173) in **Chrome** or **Edge**. 
+   *(Note: The Web Speech API is not fully supported in Firefox or Safari).*
+
+### Build for Production
+To create a production build:
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
 npm run build
 ```
-
-Open [http://localhost:5173](http://localhost:5173) in **Chrome** or **Edge** (Web Speech API is not available in Firefox or Safari).
-
----
-
-## ⌨️ Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| `Space` | Toggle Start/Stop Listening |
+This will generate a `dist` folder containing the compiled static assets ready for deployment to any static hosting provider (Vercel, Netlify, GitHub Pages, etc.).
 
 ---
 
-## 🗂 Project Structure
+## 💻 Tech Stack
 
-```
-src/
-├── components/
-│   ├── speech/
-│   │   └── LiveStreamTranscriptionPanel.tsx   # Left panel: transcript history + interim
-│   ├── translation/
-│   │   └── TranslatedMirrorViewPanel.tsx      # Right panel: translated output
-│   ├── telemetry/
-│   │   ├── TelemetryHUD.tsx                    # Bottom metrics dashboard
-│   │   ├── ConfidenceGraph.tsx                 # SVG sparkline chart
-│   │   └── WaveformAnimation.tsx               # Canvas waveform
-│   └── common/
-│       ├── ActionStrip.tsx                     # Start/Stop/Download/Clear buttons
-│       ├── LanguageConsole.tsx                 # Language & settings config
-│       ├── ThemeSwitcher.tsx                   # Dark/Light toggle
-│       ├── ToastNotification.tsx               # Animated toast system
-│       ├── UserDictionary.tsx                  # Custom word dictionary
-│       ├── SessionAnalytics.tsx                # Session stats
-│       ├── HistorySearch.tsx                   # Translation history search
-│       └── ErrorBoundary.tsx                   # Global error boundary
-├── pages/
-│   └── Dashboard.tsx                           # Main layout
-├── store/
-│   └── speechStore.ts                          # Zustand store
-├── hooks/
-│   ├── useSpeechRecognition.ts                 # Web Speech API hook
-│   └── useTranslationEngine.ts                 # Translation engine hook
-├── services/
-│   ├── dictionaryService.ts                    # 200+ word dictionary
-│   ├── localStorageService.ts                  # Persistence layer
-│   └── exportService.ts                        # Export utilities
-├── utils/
-│   ├── tokenizer.ts                            # Text tokenization
-│   └── confidenceAnalyzer.ts                  # Confidence classification
-└── types/
-    └── index.ts                                # All TypeScript interfaces
-```
+- **Framework:** React 18
+- **Build Tool:** Vite 5
+- **Language:** TypeScript 5
+- **State Management:** Zustand 4 (with `subscribeWithSelector` middleware)
+- **Styling:** Tailwind CSS 3
+- **Animations:** Framer Motion 11
+- **Icons:** Lucide React
+- **Core API:** Native Web Speech API
+- **Utilities:** FileSaver.js (for file exports)
 
 ---
 
@@ -109,53 +110,45 @@ src/
 
 ---
 
-## 🏗 Adding New Languages
+## 🏗️ Adding New Languages
 
-1. Add a new `TargetLanguage` type in `src/types/index.ts`
-2. Add entries in `src/services/dictionaryService.ts` using the new language key
-3. Add the language option to `TARGET_LANGUAGES` array in `src/types/index.ts`
+1. Add a new `TargetLanguage` type in `src/types/index.ts`.
+2. Add entries in `src/services/dictionaryService.ts` using the new language key.
+3. Add the language option to the `TARGET_LANGUAGES` array in `src/types/index.ts`.
 
 ---
 
 ## 🔒 Browser Requirements
 
-- **Chrome** 33+ or **Edge** 79+ (Web Speech API required)
-- Microphone permission must be granted
-- HTTPS required in production (HTTP works on localhost)
+- **Chrome** 33+ or **Edge** 79+ (Required for Web Speech API).
+- **Microphone permission** must be granted when prompted.
+- **HTTPS** is required in production (HTTP works on localhost).
 
 ---
 
-## 🎨 Design System
+## ⌨️ Keyboard Shortcuts
 
-| Token | Value |
-|-------|-------|
-| Background | `#0f172a` |
-| Card | `#1e293b` |
-| Accent | `#3b82f6` |
-| Success | `#22c55e` |
-| Warning | `#f59e0b` |
-| Error | `#ef4444` |
-| Font | Times New Roman (transcript), Inter (UI) |
+| Key | Action |
+|-----|--------|
+| `Space` | Toggle Start/Stop Listening |
 
 ---
 
-## 📦 Tech Stack
+## 🗂️ Project Structure
 
-- **React 18** + **TypeScript 5**
-- **Vite 5** (build tool)
-- **Zustand 4** (state management with selectors)
-- **Tailwind CSS 3** (utility-first styling)
-- **Framer Motion 11** (animations)
-- **Lucide React** (icons)
-- **FileSaver.js** (export downloads)
-- **Web Speech API** (native browser speech recognition)
-
----
-
-## 🧠 Architecture Notes
-
-- All state is managed via Zustand with `subscribeWithSelector` middleware
-- Translation engine is a React hook that reactively translates new finalized transcript items
-- LocalStorage service rehydrates Date objects automatically on load
-- Confidence history is capped at 50 points for performance
-- Transcript/translation history is capped at 100 items in localStorage
+```text
+src/
+├── components/
+│   ├── speech/          # Speech recognition components
+│   ├── translation/     # Translation output components
+│   ├── telemetry/       # Metrics dashboard & UI animations
+│   ├── views/           # Full app views (Dashboard, Settings, etc.)
+│   └── common/          # Reusable UI elements (Buttons, Notifications)
+├── hooks/               # Custom React hooks (useSpeechRecognition, useTranslation)
+├── layouts/             # App shell layouts
+├── pages/               # Main page containers
+├── services/            # Core business logic (Dictionary, Export, Storage)
+├── store/               # Zustand global state definitions
+├── types/               # TypeScript interfaces & enums
+└── utils/               # Helper functions (Tokenizer, Confidence analyzer)
+```
