@@ -65,7 +65,7 @@ Follow these steps to run the project locally. Any developer should be able to g
    npm run dev
    ```
 
-4. **Open the App:**
+4. **Live Demo:**
    Open https://translation-mirror.netlify.app/ in **Chrome** or **Edge**. 
    *(Note: The Web Speech API is not fully supported in Firefox or Safari).*
 
