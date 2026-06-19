@@ -22,17 +22,17 @@ No backend. No cloud API keys. Everything runs locally in the browser utilizing 
 
 | Feature | Description |
 |---------|-------------|
-| 🎤 **Web Speech API** | Continuous/interim speech recognition directly in-browser. |
-| 🌐 **Client-side Translation** | Built-in 200+ word dictionary (EN → HI/FR/ES/DE). |
-| 📊 **Confidence Tracker** | Green/Yellow/Red confidence bands with a live sparkline graph. |
-| 📡 **Telemetry HUD** | 8 animated real-time metric cards for speech statistics. |
-| 📜 **Split-screen Mirror** | Live transcription + translated mirror side-by-side. |
-| 💾 **LocalStorage Persistence** | Auto-saves transcripts, translations, and user preferences. |
-| 📤 **Export System** | Download transcripts as `.md`, `.txt`, or `.json`. |
-| 🎨 **Glassmorphism UI** | Premium Dark/Light mode SaaS-like design. |
-| 📖 **Custom Dictionary** | Add your own custom word translations on the fly. |
-| 🔍 **History Search** | Filter past sessions by date, word, or language. |
-| 📈 **Session Analytics** | Word frequency, average confidence, and session duration. |
+|  **Web Speech API** | Continuous/interim speech recognition directly in-browser. |
+|  **Client-side Translation** | Built-in 200+ word dictionary (EN → HI/FR/ES/DE). |
+|  **Confidence Tracker** | Green/Yellow/Red confidence bands with a live sparkline graph. |
+|  **Telemetry HUD** | 8 animated real-time metric cards for speech statistics. |
+|  **Split-screen Mirror** | Live transcription + translated mirror side-by-side. |
+|  **LocalStorage Persistence** | Auto-saves transcripts, translations, and user preferences. |
+|  **Export System** | Download transcripts as `.md`, `.txt`, or `.json`. |
+|  **Glassmorphism UI** | Premium Dark/Light mode SaaS-like design. |
+|  **Custom Dictionary** | Add your own custom word translations on the fly. |
+|  **History Search** | Filter past sessions by date, word, or language. |
+|  **Session Analytics** | Word frequency, average confidence, and session duration. |
 
 ---
 
