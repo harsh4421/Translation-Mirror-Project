@@ -1,4 +1,4 @@
-# 🎙️ Translation Mirror Project
+#  Translation Mirror Project
 
 ![Live Demo](https://img.shields.io/badge/Live_Demo-Coming_Soon-blue?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Tech-React_|_Vite_|_TypeScript-blue?style=for-the-badge)
@@ -10,7 +10,7 @@ No backend. No cloud API keys. Everything runs locally in the browser utilizing 
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 *(Replace with actual screenshots of your app)*
 > **Tip:** You can upload screenshots to an issue or PR in this repo, copy the image link, and place it here!
@@ -21,7 +21,7 @@ No backend. No cloud API keys. Everything runs locally in the browser utilizing 
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---------|-------------|
@@ -39,7 +39,7 @@ No backend. No cloud API keys. Everything runs locally in the browser utilizing 
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 Follow these steps to run the project locally. Any developer should be able to get this running in minutes.
 
@@ -78,7 +78,7 @@ This will generate a `dist` folder containing the compiled static assets ready f
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 
 - **Framework:** React 18
 - **Build Tool:** Vite 5
@@ -92,7 +92,7 @@ This will generate a `dist` folder containing the compiled static assets ready f
 
 ---
 
-## 🌍 Supported Languages
+##  Supported Languages
 
 ### Speech Recognition (Source)
 - 🇺🇸 English (en-US)
@@ -110,7 +110,7 @@ This will generate a `dist` folder containing the compiled static assets ready f
 
 ---
 
-## 🏗️ Adding New Languages
+##  Adding New Languages
 
 1. Add a new `TargetLanguage` type in `src/types/index.ts`.
 2. Add entries in `src/services/dictionaryService.ts` using the new language key.
@@ -118,7 +118,7 @@ This will generate a `dist` folder containing the compiled static assets ready f
 
 ---
 
-## 🔒 Browser Requirements
+##  Browser Requirements
 
 - **Chrome** 33+ or **Edge** 79+ (Required for Web Speech API).
 - **Microphone permission** must be granted when prompted.
@@ -126,7 +126,7 @@ This will generate a `dist` folder containing the compiled static assets ready f
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+##  Keyboard Shortcuts
 
 | Key | Action |
 |-----|--------|
